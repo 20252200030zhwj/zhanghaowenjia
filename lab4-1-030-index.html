@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>数字展销平台</title>
-    <link rel="stylesheet" href="./css/lab3-1-030-index.css">
+    <link rel="stylesheet" href="./css/lab4-1-030-index.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <div class="header">
         <div class="logo">
             数字展销平台
+        </div>
+        <div class="header-icons">
+            <a href="#" class="icon-link search-icon">🔍</a>
+            <a href="#" class="icon-link cart-icon">🛒</a>
         </div>
         <div class="user">
             <a href="#login-box-show-login" class="login-btn">登录</a>
@@ -33,23 +37,65 @@
                 <li><a href="#">礼品卡、生活服务</a></li>
             </ul>
         </div>
+        
+        <!-- 轮播图 -->
         <div class="banner">
-            <a href="#">
-                <img class="img1" src="img/大放价.jpg" width="800px" height="330" alt="春季大放价">
-            </a>
-            <a href="#">
-                <img class="img2" src="img/推荐.jpg" width="800px" height="160" alt="图书推荐">
-            </a>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="img/banner1.png" alt="精选畅销好书">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.png" alt="春季图书大放价">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.png" alt="精选畅销书籍">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner4.png" alt="开启奇幻阅读之旅">
+                </div>
+            </div>
+            <div class="banner-bottom">
+                <div class="promo-card">
+                    <div class="promo-left">
+                        <p class="promo-title">限时特惠</p>
+                        <p class="promo-subtitle">精选好书</p>
+                        <p class="promo-price">低至 <span class="price-highlight">9.9元</span></p>
+                    </div>
+                    <div class="promo-right">
+                        <a href="#" class="promo-btn">立即抢购</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <div class="right">
             <div class="news">
-                <h4>信息公告 | 服务公告</h4>
+                <h4>新书上架</h4>
                 <ul>
-                    <li>春季大放价，春季图书专区9.9元包邮</li>
-                    <li>春季阅读 5折封顶</li>
-                    <li>春季大放价 童书5折封顶</li>
-                    <li>图书春季钜惠3件3折</li>
+                    <li>《云边有个小卖部》张嘉佳</li>
+                    <li>《人间失格》太宰治</li>
+                    <li>《百年孤独》马尔克斯</li>
+                    <li>《活着》余华</li>
+                    <li>《围城》钱钟书</li>
+                    <li>《三体》刘慈欣</li>
                 </ul>
+            </div>
+            <div class="hot-categories">
+                <h4>畅销排行</h4>
+                <ul>
+                    <li><a href="javascript:void(0)">《明朝那些事儿》当年明月</a></li>
+                    <li><a href="javascript:void(0)">《红楼梦》曹雪芹</a></li>
+                    <li><a href="javascript:void(0)">《小王子》圣埃克苏佩里</a></li>
+                    <li><a href="javascript:void(0)">《追风筝的人》卡勒德</a></li>
+                    <li><a href="javascript:void(0)">《解忧杂货店》东野圭吾</a></li>
+                </ul>
+            </div>
+            <div class="sale-banner">
+                <div class="sale-content">
+                    <p class="sale-title">会员专享</p>
+                    <p class="sale-discount">8折优惠</p>
+                    <a href="#" class="sale-btn">立即领取</a>
+                </div>
             </div>
         </div>
     </div>
@@ -59,25 +105,33 @@
         <h3>图书推荐</h3>
         <div class="book-list">
             <div class="book-item">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20modern%20fiction&image_size=square" alt="现代小说">
+                <div class="book-img-wrapper">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20modern%20fiction&image_size=square" alt="现代小说">
+                </div>
                 <h4>《云边有个小卖部》</h4>
                 <p>张嘉佳</p>
                 <p class="price">¥39.90</p>
             </div>
             <div class="book-item">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20self%20help&image_size=square" alt="自我提升">
+                <div class="book-img-wrapper">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20self%20help&image_size=square" alt="自我提升">
+                </div>
                 <h4>《被讨厌的勇气》</h4>
                 <p>岸见一郎</p>
                 <p class="price">¥45.00</p>
             </div>
             <div class="book-item">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20science%20fiction&image_size=square" alt="科幻小说">
+                <div class="book-img-wrapper">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20science%20fiction&image_size=square" alt="科幻小说">
+                </div>
                 <h4>《三体》</h4>
                 <p>刘慈欣</p>
                 <p class="price">¥32.00</p>
             </div>
             <div class="book-item">
-                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20history&image_size=square" alt="历史书籍">
+                <div class="book-img-wrapper">
+                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=book%20cover%20design%20history&image_size=square" alt="历史书籍">
+                </div>
                 <h4>《人类简史》</h4>
                 <p>尤瓦尔·赫拉利</p>
                 <p class="price">¥58.00</p>
